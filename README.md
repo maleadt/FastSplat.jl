@@ -18,7 +18,7 @@ julia> @code_llvm bar(SVector(1,2,3))
 ...
 ```
 
-```
+```julia
 julia> using FastSplat
 julia> bar(args) = @fastsplat foo(args...)
 julia> @code_llvm bar(SVector(1,2,3))
